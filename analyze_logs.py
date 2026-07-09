@@ -57,11 +57,34 @@ def generate_ai_summary():
         except Exception as e:
             summary = f"API Connection Error: {str(e)}"
 
-    # Save output for the dashboard
-    report = {"generated_at": datetime.now().isoformat(), "summary": summary}
-    with open("ai_report.json", "w") as f:
-        json.dump(report, f, indent=4)
-    print("AI report saved successfully.")
+    # --- LOG ROTATION & ARCHIVAL SYSTEM ---
+    report_file = "ai_report.json"
+    new_entry = {"generated_at": datetime.now().isoformat(), "summary": summary}
+    
+    # Load existing history if the file exists
+    if os.path.exists(report_file):
+        with open(report_file, "r") as f:
+            try:
+                history = json.load(f)
+                # Ensure it's a list (failsafe in case of old format)
+                if isinstance(history, dict): 
+                    history = [history]
+            except json.JSONDecodeError:
+                history = []
+    else:
+        history = []
+
+    # Prepend the new report to the top of the list
+    history.insert(0, new_entry)
+    
+    # Cap the archive at the last 15 entries to prevent file bloat
+    history = history[:15]
+
+    # Save the rotated log back to the file
+    with open(report_file, "w") as f:
+        json.dump(history, f, indent=4)
+        
+    print("AI report saved and archive rotated successfully.")
 
 if __name__ == "__main__":
     generate_ai_summary()
