@@ -10,11 +10,10 @@ class NetworkLatencyMonitor:
         self.ping_count = ping_count
         self.json_output = "latency_data.json"
         self.history_output = "latency_history.csv"
+        self.alerts_output = "alerts.json" # New alerts feed
 
     def tcp_ping(self, target):
-        """Pings a target using TCP to bypass cloud ICMP firewalls."""
         latencies = []
-        # Target port 53 for DNS (8.8.8.8) and port 443 for standard web hosts
         port = 53 if target == "8.8.8.8" else 443 
         
         for _ in range(self.ping_count):
@@ -33,14 +32,7 @@ class NetworkLatencyMonitor:
         loss_pct = round(((self.ping_count - received) / self.ping_count) * 100)
 
         if received == 0:
-            return {
-                "target": target, 
-                "latency_ms": "Timeout", 
-                "packet_loss_pct": 100, 
-                "jitter_ms": 0, 
-                "status": "Offline",
-                "timestamp": datetime.now().isoformat()
-            }
+            return {"target": target, "latency_ms": "Timeout", "packet_loss_pct": 100, "jitter_ms": 0, "status": "Offline", "timestamp": datetime.now().isoformat()}
 
         avg_latency = round(sum(latencies) / received)
         
@@ -50,18 +42,45 @@ class NetworkLatencyMonitor:
             jitter = round(sum(diffs) / len(diffs), 1)
 
         status = "Online" if loss_pct < 50 else "Degraded"
+        return {"target": target, "latency_ms": avg_latency, "packet_loss_pct": loss_pct, "jitter_ms": jitter, "status": status, "timestamp": datetime.now().isoformat()}
 
-        return {
-            "target": target,
-            "latency_ms": avg_latency,
-            "packet_loss_pct": loss_pct,
-            "jitter_ms": jitter,
-            "status": status,
-            "timestamp": datetime.now().isoformat()
-        }
+    def process_alerts(self, results):
+        """Evaluates results and updates the active alerts feed."""
+        new_alerts = []
+        for r in results:
+            if r['status'] != 'Online':
+                new_alerts.append({
+                    "timestamp": r['timestamp'],
+                    "target": r['target'],
+                    "level": "CRITICAL" if r['status'] == 'Offline' else "WARNING",
+                    "message": f"Target is {r['status']}. Latency: {r['latency_ms']}, Loss: {r['packet_loss_pct']}%"
+                })
+
+        # Load existing alerts to keep a rolling history of the last 10
+        existing_alerts = []
+        if os.path.isfile(self.alerts_output):
+            try:
+                with open(self.alerts_output, "r") as f:
+                    existing_alerts = json.load(f)
+            except Exception:
+                pass
+
+        # Combine, sort, and keep the latest 10
+        all_alerts = new_alerts + existing_alerts
+        # Deduplicate and limit to 10
+        seen = set()
+        final_alerts = []
+        for alert in all_alerts:
+            identifier = f"{alert['target']}-{alert['timestamp']}"
+            if identifier not in seen:
+                seen.add(identifier)
+                final_alerts.append(alert)
+        
+        # Save the feed
+        with open(self.alerts_output, "w") as f:
+            json.dump(final_alerts[:10], f, indent=4)
 
     def log_to_history(self, results):
-        """Appends telemetry to a continuous CSV file for long-term trend mapping."""
         file_exists = os.path.isfile(self.history_output)
         with open(self.history_output, "a") as f:
             if not file_exists:
@@ -70,7 +89,6 @@ class NetworkLatencyMonitor:
                 f.write(f"{r['timestamp']},{r['target']},{r['latency_ms']},{r['packet_loss_pct']},{r['jitter_ms']},{r['status']}\n")
 
     def save_live_dashboard_data(self, results):
-        """Updates the primary JSON payload fetched by the frontend dashboard."""
         with open(self.json_output, "w") as f:
             json.dump(results, f, indent=4)
 
@@ -83,7 +101,8 @@ class NetworkLatencyMonitor:
         
         self.save_live_dashboard_data(results)
         self.log_to_history(results)
-        print("Telemetry updated successfully.")
+        self.process_alerts(results) # Trigger the alert logic
+        print("Telemetry and alerts updated successfully.")
 
 if __name__ == "__main__":
     monitored_hosts = ["google.com", "8.8.8.8", "sanook.com"]
