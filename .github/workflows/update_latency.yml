@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies  # <--- ADD THIS BLOCK
+      - name: Install dependencies 
         run: pip install requests
 
       - name: Run Latency Monitor Engine
@@ -27,6 +27,7 @@ jobs:
       - name: Run AI Log Analysis Engine
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }} # <--- ADDED HERE
         run: python analyze_logs.py
 
       - name: Commit and Push changes
