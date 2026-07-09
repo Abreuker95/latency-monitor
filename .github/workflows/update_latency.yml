@@ -25,6 +25,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git commit -m "Automated update of latency data" || echo "No changes to commit"
+          git add latency_data.json latency_history.csv alerts.json
+          git commit -m "Automated update of latency data and alerts" || echo "No changes to commit"
           git push
