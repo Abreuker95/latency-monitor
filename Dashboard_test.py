@@ -66,7 +66,13 @@ class NetworkLatencyMonitor:
                 pass
 
         # Combine, sort, and keep the latest 10
-        all_alerts = new_alerts + existing_alerts
+        # --- DATA TYPE FAILSAFE ---
+        # Ensure existing_alerts is a list before concatenating
+        if isinstance(existing_alerts, dict):
+            existing_alerts = [existing_alerts]
+        elif not isinstance(existing_alerts, list):
+            existing_alerts = []
+            
         # Deduplicate and limit to 10
         seen = set()
         final_alerts = []
