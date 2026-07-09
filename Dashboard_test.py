@@ -79,7 +79,15 @@ class NetworkLatencyMonitor:
         # Deduplicate and limit to 10
         seen = set()
         final_alerts = []
+        # Deduplicate and limit to 10
+        seen = set()
+        final_alerts = []
         for alert in all_alerts:
+            # --- SCHEMA FAILSAFE ---
+            # Skip older alerts from previous versions that don't have the new keys
+            if 'target' not in alert or 'timestamp' not in alert:
+                continue
+                
             identifier = f"{alert['target']}-{alert['timestamp']}"
             if identifier not in seen:
                 seen.add(identifier)
