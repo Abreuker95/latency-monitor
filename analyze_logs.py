@@ -46,7 +46,7 @@ def generate_ai_summary():
         }
 
         try:
-            print("Forwarding payload to Google Gemini 1.5 Flash...")
+            print("Forwarding payload to Google Gemini 2.5 Flash...")
             response = requests.post(url, headers=headers, json=payload, timeout=60)
             
             if response.status_code == 200:
