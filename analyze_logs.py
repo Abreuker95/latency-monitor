@@ -35,7 +35,7 @@ def generate_ai_summary():
         api_key = os.getenv("LLM_API_KEY")
         
         # --- GEMINI REST API INTEGRATION ---
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
         headers = {'Content-Type': 'application/json'}
         payload = {
             "contents": [{"parts": [{"text": prompt}]}],
