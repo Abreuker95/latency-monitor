@@ -1,0 +1,20 @@
+[
+    {
+        "target": "google.com",
+        "latency_ms": 38.0,
+        "status": "Online",
+        "timestamp": "2026-07-08T23:14:44.878462"
+    },
+    {
+        "target": "8.8.8.8",
+        "latency_ms": 38.0,
+        "status": "Online",
+        "timestamp": "2026-07-08T23:14:44.928694"
+    },
+    {
+        "target": "sanook.com",
+        "latency_ms": 267.0,
+        "status": "Online",
+        "timestamp": "2026-07-08T23:14:45.302376"
+    }
+]
