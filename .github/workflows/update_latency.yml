@@ -1,8 +1,8 @@
 name: Update Latency Data
 on:
   schedule:
-    - cron: '0 * * * *' # Runs at the top of every hour
-  workflow_dispatch:      # Allows you to run it manually whenever you want
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   update-data:
@@ -11,20 +11,20 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to fix the warning
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # Updated to fix the warning
         with:
           python-version: '3.x'
 
       - name: Run Latency Monitor
-        run: python dashboard_test.py
+        run: python dashboard_test.py # Ensure your script is named exactly this in your repo
 
       - name: Commit and Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add latency_data.json
-          git commit -m "Automated update of latency data"
+          git add -A
+          git commit -m "Automated update of latency data" || echo "No changes to commit"
           git push
