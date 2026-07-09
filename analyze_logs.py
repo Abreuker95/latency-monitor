@@ -94,7 +94,10 @@ def generate_ai_summary():
         headers = {'Content-Type': 'application/json'}
         payload = {
             "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"temperature": 0.2, "maxOutputTokens": 150}
+            "generationConfig": {
+                "temperature": 0.2, 
+                "maxOutputTokens": 500  # <--- BUMPED FROM 150 to 500
+            }
         }
 
         try:
