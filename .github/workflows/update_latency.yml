@@ -19,7 +19,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run Latency Monitor
-        run: python dashboard_test.py # Ensure your script is named exactly this in your repo
+        run: python Dashboard_test.py # Ensure your script is named exactly this in your repo
 
       - name: Commit and Push changes
         run: |
