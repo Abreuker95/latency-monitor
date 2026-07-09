@@ -23,43 +23,45 @@ def get_recent_logs(filename="latency_history.csv", hours=24):
     return recent_rows
 
 def generate_ai_summary():
-    print(f"[{datetime.now()}] Starting AI Analysis via API Gateway...")
+    print(f"[{datetime.now()}] Starting AI Analysis via Google Gemini Engine...")
     logs = get_recent_logs()
     
     if not logs:
         summary = "No telemetry data available for the last 24 hours."
     else:
         log_payload = "\n".join(logs)
-        raw_prompt = f"Analyze this NOC telemetry data: {log_payload}. Provide a professional 3-sentence summary of network health. Do not use markdown."
-        formatted_prompt = f"<s>[INST] {raw_prompt} [/INST]"
+        prompt = f"You are a NOC Engineer. Analyze this network telemetry data: {log_payload}. Provide a professional 3-sentence summary of the network's health. Do not use markdown formatting, bolding, or asterisks."
 
         api_key = os.getenv("LLM_API_KEY")
         
-        # --- THE PROXY BYPASS ---
-        # Routing through your newly deployed Google Apps Script Gateway
-        PROXY_URL = "https://script.google.com/macros/s/AKfycbw3aE34SJ1q0LhbNcJodFYBP2h_EQS6okV2nOooyli8AWT-OIzebvgtz5ByQnBCKYwp/exec"
-        
+        # --- GEMINI REST API INTEGRATION ---
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+        headers = {'Content-Type': 'application/json'}
         payload = {
-            "prompt": formatted_prompt,
-            "apiKey": api_key
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {
+                "temperature": 0.2, 
+                "maxOutputTokens": 150
+            }
         }
 
         try:
-            print("Routing request through Google Apps Script Gateway...")
-            response = requests.post(PROXY_URL, json=payload, timeout=60)
+            print("Forwarding payload to Google Gemini 1.5 Flash...")
+            response = requests.post(url, headers=headers, json=payload, timeout=60)
             
             if response.status_code == 200:
-                # Parse the array returned by HuggingFace via the proxy
-                summary = response.json()[0]['generated_text'].strip()
+                # Parse Gemini's specific JSON structure
+                summary = response.json()['candidates'][0]['content']['parts'][0]['text'].strip()
             else:
-                summary = f"Proxy reached but returned error: {response.status_code}"
+                summary = f"Gemini API returned error: {response.status_code} - {response.text}"
         except Exception as e:
-            summary = f"Gateway Connection Error: {str(e)}"
+            summary = f"API Connection Error: {str(e)}"
 
+    # Save output for the dashboard
     report = {"generated_at": datetime.now().isoformat(), "summary": summary}
     with open("ai_report.json", "w") as f:
         json.dump(report, f, indent=4)
-    print("AI report saved.")
+    print("AI report saved successfully.")
 
 if __name__ == "__main__":
     generate_ai_summary()
