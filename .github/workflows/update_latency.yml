@@ -28,3 +28,19 @@ jobs:
           git add latency_data.json latency_history.csv alerts.json
           git commit -m "Automated update of latency data and alerts" || echo "No changes to commit"
           git push
+
+       - name: Run Latency Monitor Engine
+        run: python Dashboard_test.py
+
+      - name: Run AI Log Analysis Engine
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: python analyze_logs.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add latency_data.json latency_history.csv alerts.json ai_report.json
+          git commit -m "Automated update of data, alerts, and AI report" || echo "No changes to commit"
+          git push
