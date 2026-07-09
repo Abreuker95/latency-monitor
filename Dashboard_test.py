@@ -73,6 +73,9 @@ class NetworkLatencyMonitor:
         elif not isinstance(existing_alerts, list):
             existing_alerts = []
             
+        # THE MISSING LINE HAS BEEN ADDED HERE:
+        all_alerts = new_alerts + existing_alerts
+            
         # Deduplicate and limit to 10
         seen = set()
         final_alerts = []
