@@ -2,18 +2,6 @@ import os
 import json
 import requests
 from datetime import datetime, timedelta
-import socket
-from urllib3.util.connection import create_connection
-
-# --- 1. THE DNS BYPASS PATCH ---
-# Force the connection to resolve the hostname explicitly to bypass runner restrictions
-def patched_create_connection(address, *args, **kwargs):
-    host, port = address
-    hostname = socket.gethostbyname(host)
-    return create_connection((hostname, port), *args, **kwargs)
-
-# Apply the patch to the requests library
-requests.packages.urllib3.util.connection.create_connection = patched_create_connection
 
 def get_recent_logs(filename="latency_history.csv", hours=24):
     """Parses the CSV and returns lines from the last 24 hours."""
@@ -35,45 +23,39 @@ def get_recent_logs(filename="latency_history.csv", hours=24):
     return recent_rows
 
 def generate_ai_summary():
-    print(f"[{datetime.now()}] Starting AI Analysis...")
-    
-    # --- 2. NETWORK VISIBILITY CHECK ---
-    print("Checking network visibility...")
-    try:
-        ip = socket.gethostbyname("api-inference.huggingface.co")
-        print(f"Successfully resolved HuggingFace IP: {ip}")
-    except Exception as e:
-        print(f"DNS Resolution FAILED: {e}")
-
+    print(f"[{datetime.now()}] Starting AI Analysis via API Gateway...")
     logs = get_recent_logs()
     
     if not logs:
         summary = "No telemetry data available for the last 24 hours."
     else:
-        # Prepare the prompt
         log_payload = "\n".join(logs)
-        prompt = f"Analyze this NOC telemetry data: {log_payload}. Provide a professional 3-sentence summary of network health. Do not use markdown."
+        raw_prompt = f"Analyze this NOC telemetry data: {log_payload}. Provide a professional 3-sentence summary of network health. Do not use markdown."
+        formatted_prompt = f"<s>[INST] {raw_prompt} [/INST]"
 
-        # Call HuggingFace
         api_key = os.getenv("LLM_API_KEY")
-        url = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
-        headers = {"Authorization": f"Bearer {api_key}"}
+        
+        # --- THE PROXY BYPASS ---
+        # Routing through your newly deployed Google Apps Script Gateway
+        PROXY_URL = "https://script.google.com/macros/s/AKfycbw3aE34SJ1q0LhbNcJodFYBP2h_EQS6okV2nOooyli8AWT-OIzebvgtz5ByQnBCKYwp/exec"
+        
         payload = {
-            "inputs": f"<s>[INST] {prompt} [/INST]",
-            "parameters": {"max_new_tokens": 150, "temperature": 0.3}
+            "prompt": formatted_prompt,
+            "apiKey": api_key
         }
 
         try:
-            # The timeout is set to 60s, and it will now use our patched DNS resolver
-            response = requests.post(url, headers=headers, json=payload, timeout=60)
+            print("Routing request through Google Apps Script Gateway...")
+            response = requests.post(PROXY_URL, json=payload, timeout=60)
+            
             if response.status_code == 200:
+                # Parse the array returned by HuggingFace via the proxy
                 summary = response.json()[0]['generated_text'].strip()
             else:
-                summary = f"API Service reached but returned error: {response.status_code}"
+                summary = f"Proxy reached but returned error: {response.status_code}"
         except Exception as e:
-            summary = f"Analysis Engine Connection Error: {str(e)}"
+            summary = f"Gateway Connection Error: {str(e)}"
 
-    # Save output
     report = {"generated_at": datetime.now().isoformat(), "summary": summary}
     with open("ai_report.json", "w") as f:
         json.dump(report, f, indent=4)
