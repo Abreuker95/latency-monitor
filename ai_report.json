@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-10T20:18:52.387919",
+        "summary": "The network is generally stable with all monitored external services reporting online and no packet loss. Connectivity to global"
+    },
+    {
         "generated_at": "2026-07-10T18:20:40.722835",
         "summary": "The network is generally stable with excellent connectivity to core internet services like google.com and"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-09T17:56:57.128447",
         "summary": "The network is generally"
-    },
-    {
-        "generated_at": "2026-07-09T17:32:33.014735",
-        "summary": "The network generally appears stable"
     }
 ]
