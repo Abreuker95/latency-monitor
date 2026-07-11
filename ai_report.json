@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-11T13:08:15.147506",
+        "summary": "The network is generally healthy, demonstrating consistent connectivity and excellent performance to critical internet services like"
+    },
+    {
         "generated_at": "2026-07-11T11:00:16.300033",
         "summary": "Gemini API returned error: 503"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-10T04:46:05.968004",
         "summary": "The network is currently stable, with all monitored external targets consistently reporting an online status and 0"
-    },
-    {
-        "generated_at": "2026-07-10T00:00:43.376959",
-        "summary": "Gemini API returned error: 503"
     }
 ]
