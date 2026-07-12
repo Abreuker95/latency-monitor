@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-12T22:42:14.116049",
+        "summary": "The network is currently stable with no reported packet loss and all monitored services showing an \"Online"
+    },
+    {
         "generated_at": "2026-07-12T21:43:37.262176",
         "summary": "Overall network connectivity appears stable and reliable, with all monitored destinations consistently reporting an \"Online"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-11T23:50:58.448113",
         "summary": "The network generally exhibits stable connectivity to external services, with Google and 8.8.8"
-    },
-    {
-        "generated_at": "2026-07-11T22:42:06.108426",
-        "summary": "The network is generally stable with all monitored external services consistently reachable. Connectivity to Google services"
     }
 ]
