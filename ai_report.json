@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-13T22:52:06.603167",
+        "summary": "The network is currently stable and healthy, demonstrating consistent connectivity to all monitored external destinations with zero"
+    },
+    {
         "generated_at": "2026-07-13T21:52:17.048509",
         "summary": "The network is generally stable with consistent low latency and no packet loss to critical services like"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-12T17:56:28.495347",
         "summary": "The network demonstrates excellent overall health with consistent \"Online\" status and zero packet loss across all monitored"
-    },
-    {
-        "generated_at": "2026-07-12T16:54:40.830549",
-        "summary": "The network generally appears stable with all monitored targets consistently online and experiencing no packet loss."
     }
 ]
