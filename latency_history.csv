@@ -251,3 +251,6 @@ Timestamp,Target,Latency_ms,PacketLoss_pct,Jitter_ms,Status
 2026-07-15T07:12:21.030100,google.com,7,0,0.7,Online
 2026-07-15T07:12:22.061377,8.8.8.8,6,0,0.6,Online
 2026-07-15T07:12:24.516637,sanook.com,291,0,26.2,Online
+2026-07-15T09:57:54.988977,google.com,3,0,1.0,Online
+2026-07-15T09:57:55.999439,8.8.8.8,2,0,0.3,Online
+2026-07-15T09:57:58.352939,sanook.com,271,0,9.2,Online
