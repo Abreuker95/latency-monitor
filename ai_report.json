@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-16T10:54:32.996000",
+        "summary": "The network is generally stable, with connections to google.com and 8.8."
+    },
+    {
         "generated_at": "2026-07-16T08:04:47.423985",
         "summary": "The network generally exhibits stable connectivity to external services like Google and 8.8.8.8"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-15T07:12:27.474439",
         "summary": "The network generally exhibits good health with all monitored external destinations consistently online and experiencing no packet loss."
-    },
-    {
-        "generated_at": "2026-07-15T04:55:08.006056",
-        "summary": "The network generally appears healthy with consistent connectivity to all monitored targets and no packet loss observed. However"
     }
 ]
