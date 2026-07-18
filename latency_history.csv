@@ -380,3 +380,6 @@ Timestamp,Target,Latency_ms,PacketLoss_pct,Jitter_ms,Status
 2026-07-18T15:51:37.484531,google.com,7,0,1.0,Online
 2026-07-18T15:51:38.520511,8.8.8.8,7,0,2.6,Online
 2026-07-18T15:51:40.961307,sanook.com,288,0,19.0,Online
+2026-07-18T16:52:07.450839,google.com,7,0,5.6,Online
+2026-07-18T16:52:08.475097,8.8.8.8,5,0,2.6,Online
+2026-07-18T16:52:10.877700,sanook.com,280,0,12.3,Online
