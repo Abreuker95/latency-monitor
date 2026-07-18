@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-18T14:47:17.003502",
+        "summary": "The network is generally healthy with all monitored destinations consistently online and experiencing no packet loss. While latency"
+    },
+    {
         "generated_at": "2026-07-18T13:04:10.116520",
         "summary": "The network is currently stable with all monitored destinations showing continuous online status and zero packet loss. Connectivity"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-17T14:29:24.735151",
         "summary": "The network generally appears stable and online with no packet loss observed across all monitored destinations. However, there"
-    },
-    {
-        "generated_at": "2026-07-17T12:05:17.014231",
-        "summary": "Overall network connectivity to core internet services like Google and Google DNS is consistently healthy, showing very"
     }
 ]
