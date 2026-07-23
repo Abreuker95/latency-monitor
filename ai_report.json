@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-23T19:07:42.442660",
+        "summary": "The network demonstrates stable connectivity to core internet services and DNS, with consistently low latency, zero packet"
+    },
+    {
         "generated_at": "2026-07-23T17:15:30.775147",
         "summary": "The network is generally stable with all monitored destinations consistently reachable and no packet loss observed. Connectivity to common"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-22T11:04:33.696505",
         "summary": "The network is generally stable with all monitored endpoints consistently reporting online status and no packet loss. Connectivity to"
-    },
-    {
-        "generated_at": "2026-07-22T08:20:29.092855",
-        "summary": "The network is generally stable with all monitored services consistently reporting online status and zero packet loss"
     }
 ]
