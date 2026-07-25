@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-25T21:50:41.212483",
+        "summary": "The network generally demonstrates good health for core services like Google, with consistently low latency,"
+    },
+    {
         "generated_at": "2026-07-25T20:43:57.348997",
         "summary": "The network is generally stable with excellent connectivity to core internet services like Google, showing consistently"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-24T18:15:21.228493",
         "summary": "The network is generally healthy, exhibiting stable connectivity with no packet loss to all monitored external targets."
-    },
-    {
-        "generated_at": "2026-07-24T16:33:03.852954",
-        "summary": "The network generally maintains stable connectivity with no packet loss observed across all monitored destinations. While latency to"
     }
 ]
