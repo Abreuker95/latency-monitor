@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-07-26T15:00:51.820641",
+        "summary": "The network demonstrates stable connectivity with no packet loss to all monitored destinations. While connections to core services like"
+    },
+    {
         "generated_at": "2026-07-26T13:42:02.420827",
         "summary": "The network demonstrates consistent connectivity to all monitored endpoints with no packet loss reported. While performance to"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-07-25T14:58:40.486400",
         "summary": "The network generally demonstrates stable performance with consistent connectivity and low latency to critical external services like google.com"
-    },
-    {
-        "generated_at": "2026-07-25T13:50:42.494429",
-        "summary": "The network generally demonstrates stable connectivity and low latency to critical services like Google and its DNS. However"
     }
 ]
