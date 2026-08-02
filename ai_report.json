@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-02T13:35:10.986344",
+        "summary": "The network generally exhibits good health, with all monitored external services consistently reporting online status and minimal packet"
+    },
+    {
         "generated_at": "2026-08-02T11:58:25.076286",
         "summary": "The network generally demonstrates stable connectivity to external services like google.com and 8.8.8"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-01T13:42:45.403570",
         "summary": "The network generally exhibits stable connectivity with no packet loss to any monitored targets. While google"
-    },
-    {
-        "generated_at": "2026-08-01T11:59:32.815412",
-        "summary": "The network is generally healthy, demonstrating consistent connectivity with no packet loss to all monitored external destinations over"
     }
 ]
