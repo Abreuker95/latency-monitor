@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-07T00:38:38.514418",
+        "summary": "The network is currently stable with excellent connectivity to critical external services like google.com and 8"
+    },
+    {
         "generated_at": "2026-08-06T13:54:05.286879",
         "summary": "The network is generally stable with all monitored targets consistently reporting online status and no packet loss."
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-05T06:25:45.811521",
         "summary": "The network is generally stable with all monitored targets showing an online status and no packet loss observed"
-    },
-    {
-        "generated_at": "2026-08-05T03:56:15.628950",
-        "summary": "The network generally appears stable with no packet loss to any monitored targets. However, connectivity to sanook"
     }
 ]
