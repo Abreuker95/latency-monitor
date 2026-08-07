@@ -1,26 +1,26 @@
 [
     {
         "target": "google.com",
-        "latency_ms": 5,
+        "latency_ms": 31,
         "packet_loss_pct": 0,
-        "jitter_ms": 3.3,
+        "jitter_ms": 5.9,
         "status": "Online",
-        "timestamp": "2026-08-07T09:56:36.550128"
+        "timestamp": "2026-08-07T10:51:20.802305"
     },
     {
         "target": "8.8.8.8",
-        "latency_ms": 6,
+        "latency_ms": 17,
         "packet_loss_pct": 0,
-        "jitter_ms": 3.2,
+        "jitter_ms": 3.9,
         "status": "Online",
-        "timestamp": "2026-08-07T09:56:37.583061"
+        "timestamp": "2026-08-07T10:51:21.888146"
     },
     {
         "target": "sanook.com",
-        "latency_ms": 291,
+        "latency_ms": 303,
         "packet_loss_pct": 0,
-        "jitter_ms": 26.6,
+        "jitter_ms": 40.1,
         "status": "Online",
-        "timestamp": "2026-08-07T09:56:40.037893"
+        "timestamp": "2026-08-07T10:51:24.403945"
     }
 ]
