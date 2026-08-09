@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-09T07:50:20.335471",
+        "summary": "The network is generally stable with all monitored services consistently reporting online status and no packet loss. However"
+    },
+    {
         "generated_at": "2026-08-09T06:47:02.448966",
         "summary": "Gemini API returned error: 429"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-08T15:24:04.252989",
         "summary": "The network generally appears stable with all monitored destinations consistently online and no packet loss observed. While latency and"
-    },
-    {
-        "generated_at": "2026-08-08T14:26:52.735175",
-        "summary": "The network generally maintains stable connectivity to external services, with all monitored destinations consistently reporting an \""
     }
 ]
