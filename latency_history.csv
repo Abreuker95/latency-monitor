@@ -1223,3 +1223,6 @@ Timestamp,Target,Latency_ms,PacketLoss_pct,Jitter_ms,Status
 2026-08-10T03:48:55.345093,google.com,7,0,0.8,Online
 2026-08-10T03:48:56.375608,8.8.8.8,6,0,0.1,Online
 2026-08-10T03:48:58.740617,sanook.com,273,0,18.6,Online
+2026-08-10T05:21:36.880500,google.com,7,0,0.6,Online
+2026-08-10T05:21:37.920542,8.8.8.8,8,0,5.1,Online
+2026-08-10T05:21:40.318792,sanook.com,280,0,24.5,Online
