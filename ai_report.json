@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-10T09:14:16.399676",
+        "summary": "The network is currently stable with all monitored destinations reporting online status and zero packet loss. Connectivity"
+    },
+    {
         "generated_at": "2026-08-10T07:22:02.719893",
         "summary": "The network telemetry data indicates a generally stable and healthy network environment. All monitored destinations, google.com"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-09T14:29:27.836543",
         "summary": "The network is currently stable and healthy, with all monitored external targets consistently reporting an online status. There"
-    },
-    {
-        "generated_at": "2026-08-09T13:44:41.639281",
-        "summary": "The network is generally stable with no reported packet loss or service outages across all monitored targets. Connectivity"
     }
 ]
