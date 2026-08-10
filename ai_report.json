@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-10T12:56:27.520958",
+        "summary": "The network is currently stable with all monitored destinations reporting online status and zero packet loss. Lat"
+    },
+    {
         "generated_at": "2026-08-10T11:03:30.725224",
         "summary": "The network is generally stable with no packet loss and all monitored services consistently online. Latency to Google"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-09T16:28:11.102037",
         "summary": "The network is currently stable with all monitored destinations reporting online status and no packet loss observed over the entire"
-    },
-    {
-        "generated_at": "2026-08-09T15:25:35.153697",
-        "summary": "The network exhibits stable connectivity with all monitored external targets consistently online and experiencing no packet loss. Lat"
     }
 ]
