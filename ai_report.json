@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-15T17:16:04.062899",
+        "summary": "The network telemetry data indicates a consistently healthy network environment. All monitored destinations, including google.com"
+    },
+    {
         "generated_at": "2026-08-15T16:18:17.388080",
         "summary": "The network demonstrates consistent connectivity with no packet loss observed across all monitored destinations. Latency to"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-15T03:34:02.454868",
         "summary": "The network generally exhibits stable performance with all monitored targets consistently online and experiencing no packet loss."
-    },
-    {
-        "generated_at": "2026-08-15T02:13:29.590958",
-        "summary": "Overall network health appears stable, with all monitored destinations consistently reporting an \"Online\" status and zero"
     }
 ]
