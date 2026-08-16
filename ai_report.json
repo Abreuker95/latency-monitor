@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-16T03:43:12.010514",
+        "summary": "The network generally appears stable with no packet loss reported for any monitored destinations. Connectivity to"
+    },
+    {
         "generated_at": "2026-08-16T02:23:14.835767",
         "summary": "The network is generally stable with no observed packet loss to any monitored destinations. Connectivity to common"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-15T12:27:23.184439",
         "summary": "The network demonstrates stable connectivity with all monitored services consistently online and no packet loss observed. Lat"
-    },
-    {
-        "generated_at": "2026-08-15T11:16:02.405202",
-        "summary": "Gemini API returned error: 503"
     }
 ]
