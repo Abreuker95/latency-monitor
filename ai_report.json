@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-16T16:18:14.152476",
+        "summary": "The network generally demonstrates stable connectivity to core services like Google DNS and google.com, with consistently"
+    },
+    {
         "generated_at": "2026-08-16T15:16:15.261190",
         "summary": "The network generally appears stable with consistent reachability to all monitored destinations. Google and 8.8"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-16T02:23:14.835767",
         "summary": "The network is generally stable with no observed packet loss to any monitored destinations. Connectivity to common"
-    },
-    {
-        "generated_at": "2026-08-16T01:00:04.566900",
-        "summary": "The network is currently stable and fully operational, with all monitored external services consistently reporting an"
     }
 ]
