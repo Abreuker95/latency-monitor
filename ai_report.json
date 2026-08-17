@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-17T19:23:49.454495",
+        "summary": "The network is generally stable with all monitored targets reporting online status and no packet loss. While Google"
+    },
+    {
         "generated_at": "2026-08-17T18:31:14.522408",
         "summary": "The network is generally stable with all monitored targets reporting online status and no packet loss observed"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-17T05:30:33.439374",
         "summary": "Gemini API returned error: 429"
-    },
-    {
-        "generated_at": "2026-08-17T04:36:08.359668",
-        "summary": "The network generally exhibits good health with consistent connectivity to external services. Google.com and 8."
     }
 ]
