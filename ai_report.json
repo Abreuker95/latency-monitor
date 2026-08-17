@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-17T06:42:44.542290",
+        "summary": "Gemini API returned error: 503"
+    },
+    {
         "generated_at": "2026-08-17T05:30:33.439374",
         "summary": "Gemini API returned error: 429"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-16T15:16:15.261190",
         "summary": "The network generally appears stable with consistent reachability to all monitored destinations. Google and 8.8"
-    },
-    {
-        "generated_at": "2026-08-16T14:17:29.208556",
-        "summary": "The network generally appears stable with all monitored targets reporting online status and minimal packet loss. However"
     }
 ]
