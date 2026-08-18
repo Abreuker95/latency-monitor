@@ -1730,3 +1730,6 @@ Timestamp,Target,Latency_ms,PacketLoss_pct,Jitter_ms,Status
 2026-08-18T13:38:16.773476,google.com,13,0,0.7,Online
 2026-08-18T13:38:17.831180,8.8.8.8,11,0,0.5,Online
 2026-08-18T13:38:20.180542,sanook.com,270,0,12.6,Online
+2026-08-18T14:27:55.661096,google.com,6,0,0.6,Online
+2026-08-18T14:27:56.688772,8.8.8.8,5,0,0.1,Online
+2026-08-18T14:27:59.035221,sanook.com,269,0,12.6,Online
