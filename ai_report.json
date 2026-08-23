@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-23T03:50:41.025897",
+        "summary": "The network is currently stable and online with no reported packet loss to any monitored destinations. Connectivity to"
+    },
+    {
         "generated_at": "2026-08-23T02:57:17.612891",
         "summary": "The network exhibits stable basic connectivity with all monitored destinations consistently online and experiencing no packet loss. Lat"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-22T12:28:49.681598",
         "summary": "The network generally exhibits stable connectivity to all monitored destinations with no packet loss reported. While"
-    },
-    {
-        "generated_at": "2026-08-22T11:16:08.668264",
-        "summary": "The network telemetry data indicates stable connectivity to all monitored destinations, with no packet loss reported over the observation"
     }
 ]
