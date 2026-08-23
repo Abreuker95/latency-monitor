@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-23T09:22:31.603441",
+        "summary": "The network is generally stable with no packet loss observed to any monitored destinations. Latency to google."
+    },
+    {
         "generated_at": "2026-08-23T08:22:58.780256",
         "summary": "The network generally exhibits stable connectivity with no packet loss to monitored external destinations. While most latency and jitter"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-22T18:22:36.377905",
         "summary": "API Connection Error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
-    },
-    {
-        "generated_at": "2026-08-22T17:16:07.998791",
-        "summary": "The network is generally healthy, with all monitored destinations consistently online and experiencing no packet loss"
     }
 ]
