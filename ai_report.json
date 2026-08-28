@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-08-28T08:42:56.745637",
+        "summary": "Gemini API returned error: 503"
+    },
+    {
         "generated_at": "2026-08-27T23:31:27.500817",
         "summary": "API Connection Error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-08-26T07:41:27.318762",
         "summary": "The network is generally stable with all monitored destinations consistently reporting an online status and no packet loss. Connectivity"
-    },
-    {
-        "generated_at": "2026-08-26T06:39:21.202198",
-        "summary": "The network is currently stable with all monitored external services consistently reachable and no packet loss reported. Latency"
     }
 ]
