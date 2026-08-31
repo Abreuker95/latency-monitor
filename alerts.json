@@ -1,5 +1,5 @@
 {
-    "status": "NORMAL",
-    "message": "No recent incidents detected. Infrastructure is stable.",
-    "timestamp": "2026-08-31T03:08:59.169494"
+    "status": "ALERT",
+    "message": "sanook.com reporting 40.0% packet loss. Status: Online",
+    "timestamp": "2026-08-31T10:24:20.444443"
 }
