@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-09-04T18:00:47.791770",
+        "summary": "The network is generally stable with all monitored destinations consistently online and experiencing no packet loss. Connectivity to"
+    },
+    {
         "generated_at": "2026-09-04T14:43:25.319797",
         "summary": "The network is currently stable and healthy, demonstrating consistent connectivity with zero packet loss to all monitored external targets"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-02T14:54:48.896644",
         "summary": "The network is currently stable with all monitored destinations reporting online status and no packet loss observed"
-    },
-    {
-        "generated_at": "2026-09-02T10:28:15.382134",
-        "summary": "The network is generally healthy, showing consistent online status and zero packet loss across all monitored destinations"
     }
 ]
