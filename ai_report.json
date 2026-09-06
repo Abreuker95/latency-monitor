@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-09-06T17:27:40.060376",
+        "summary": "Overall network connectivity appears stable, with critical services like Google and Google DNS showing excellent performance characterized by low latency and minimal jitter. However, consistent high latency, ranging from 260-295ms, and variable jitter are observed"
+    },
+    {
         "generated_at": "2026-09-06T14:48:43.890745",
         "summary": "The network is generally stable with all monitored destinations showing an \"Online\" status and no"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-04T21:10:50.998928",
         "summary": "The network generally appears stable with all monitored hosts consistently reachable and reporting an \"Online\" status. There"
-    },
-    {
-        "generated_at": "2026-09-04T18:00:47.791770",
-        "summary": "The network is generally stable with all monitored destinations consistently online and experiencing no packet loss. Connectivity to"
     }
 ]
