@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-09-06T02:33:56.589102",
+        "summary": "The network is generally stable with all monitored destinations consistently reachable and experiencing no packet loss."
+    },
+    {
         "generated_at": "2026-09-05T23:29:46.728143",
         "summary": "The network is generally stable with no packet loss observed to any monitored destinations. Connectivity to Google services ("
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-04T05:23:35.789881",
         "summary": "The network exhibits stable connectivity with no packet loss to all monitored external destinations. Latency and jitter to"
-    },
-    {
-        "generated_at": "2026-09-04T00:39:57.175281",
-        "summary": "The network is generally stable with no packet loss observed across all monitored destinations. While connectivity to Google"
     }
 ]
