@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-09-09T02:44:35.200859",
+        "summary": "The network is currently operating in a healthy state with all monitored destinations showing an online status and no packet"
+    },
+    {
         "generated_at": "2026-09-08T23:07:28.636471",
         "summary": "The network is currently stable and operating within expected parameters. All monitored destinations, including google"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-06T21:54:33.756730",
         "summary": "The network is generally stable with all monitored destinations showing an \"Online\" status and no packet"
-    },
-    {
-        "generated_at": "2026-09-06T19:54:00.125347",
-        "summary": "The network generally exhibits stable connectivity to critical internet services like Google, with consistently low latency"
     }
 ]
