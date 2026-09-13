@@ -2603,3 +2603,6 @@ Timestamp,Target,Latency_ms,PacketLoss_pct,Jitter_ms,Status
 2026-09-13T07:55:52.202189,google.com,6,0,0.7,Online
 2026-09-13T07:55:53.229095,8.8.8.8,5,0,0.2,Online
 2026-09-13T07:55:55.603945,sanook.com,275,0,17.0,Online
+2026-09-13T13:05:02.896657,google.com,5,0,0.6,Online
+2026-09-13T13:05:03.920990,8.8.8.8,5,0,0.3,Online
+2026-09-13T13:05:06.277997,sanook.com,271,0,15.6,Online
