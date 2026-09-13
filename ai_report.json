@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-09-13T17:11:46.245291",
+        "summary": "The network is currently operating in a healthy state with no observed packet loss to any monitored destinations. Lat"
+    },
+    {
         "generated_at": "2026-09-13T13:06:05.469038",
         "summary": "Gemini API returned error: 503"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-11T16:51:01.222020",
         "summary": "The network generally appears stable with all monitored destinations reporting online status and no packet loss. However,"
-    },
-    {
-        "generated_at": "2026-09-11T12:31:04.337717",
-        "summary": "The network is generally stable with all monitored hosts consistently reporting online status and zero packet loss"
     }
 ]
