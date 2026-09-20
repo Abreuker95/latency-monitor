@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-09-20T20:12:10.102719",
+        "summary": "The network is generally stable with consistent connectivity to core services like Google and 8.8.8"
+    },
+    {
         "generated_at": "2026-09-20T17:53:40.607503",
         "summary": "The network is generally stable with all monitored destinations consistently online and experiencing no packet loss. Connectivity to Google"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-18T19:23:57.612444",
         "summary": "The network is generally stable with no observed packet loss to any monitored destinations. There was a noticeable increase"
-    },
-    {
-        "generated_at": "2026-09-18T16:55:18.937401",
-        "summary": "API Connection Error: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)"
     }
 ]
