@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-09-22T10:50:20.793108",
+        "summary": "The network generally exhibits stable performance with all monitored destinations reporting online status and zero packet loss"
+    },
+    {
         "generated_at": "2026-09-22T05:46:40.741608",
         "summary": "The network generally shows stable performance with low latency and jitter to external services. However, a significant"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-20T00:35:23.205691",
         "summary": "The network demonstrates stable connectivity with all monitored targets consistently online and experiencing zero packet loss. Latency to"
-    },
-    {
-        "generated_at": "2026-09-19T22:09:26.538097",
-        "summary": "The network is generally stable with all monitored destinations consistently online and experiencing zero packet loss."
     }
 ]
