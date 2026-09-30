@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-09-30T22:47:02.616504",
+        "summary": "The network generally demonstrates stable connectivity to external services throughout the day with low latency and no packet loss"
+    },
+    {
         "generated_at": "2026-09-30T18:46:54.634662",
         "summary": "The network generally appears stable with no packet loss reported across all monitored destinations. However, a"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-27T20:45:17.405689",
         "summary": "The network is currently stable with no observed packet loss to any monitored destinations. Connectivity to critical external"
-    },
-    {
-        "generated_at": "2026-09-27T17:24:51.699957",
-        "summary": "The network is currently stable with all monitored services reporting online status and no packet loss observed across any"
     }
 ]
