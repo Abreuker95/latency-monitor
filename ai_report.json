@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-10-03T20:30:46.306399",
+        "summary": "The network generally demonstrates stable performance with consistent connectivity to critical external services. Ping latency and jitter to"
+    },
+    {
         "generated_at": "2026-10-03T17:06:19.304940",
         "summary": "The network demonstrates stable connectivity with no packet loss reported for any monitored external destinations. Latency to core"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-09-30T22:47:02.616504",
         "summary": "The network generally demonstrates stable connectivity to external services throughout the day with low latency and no packet loss"
-    },
-    {
-        "generated_at": "2026-09-30T18:46:54.634662",
-        "summary": "The network generally appears stable with no packet loss reported across all monitored destinations. However, a"
     }
 ]
