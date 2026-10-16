@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-10-16T20:25:30.688118",
+        "summary": "The network telemetry data indicates a critical issue as zero packets are being received for all monitored destinations, including"
+    },
+    {
         "generated_at": "2026-10-16T17:12:52.545399",
         "summary": "The network demonstrates stable connectivity to core internet services like Google, with consistently low latency, no packet loss"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-10-14T11:02:41.094491",
         "summary": "Gemini API returned error: 503"
-    },
-    {
-        "generated_at": "2026-10-14T05:43:24.347490",
-        "summary": "The network is generally stable with all monitored destinations showing an online status and no packet loss. Connectivity"
     }
 ]
