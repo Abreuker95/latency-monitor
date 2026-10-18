@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-10-18T22:20:08.807557",
+        "summary": "Overall network connectivity to major internet services like Google remains stable and healthy, characterized by consistently low latency and"
+    },
+    {
         "generated_at": "2026-10-18T19:59:15.402997",
         "summary": "The network generally exhibits stable connectivity with no packet loss to all monitored destinations. While global"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-10-16T23:13:05.914463",
         "summary": "The network is generally stable with all monitored external services reporting online status and no packet loss. However"
-    },
-    {
-        "generated_at": "2026-10-16T20:25:30.688118",
-        "summary": "The network telemetry data indicates a critical issue as zero packets are being received for all monitored destinations, including"
     }
 ]
