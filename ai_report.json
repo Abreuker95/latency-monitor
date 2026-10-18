@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-10-18T19:59:15.402997",
+        "summary": "The network generally exhibits stable connectivity with no packet loss to all monitored destinations. While global"
+    },
+    {
         "generated_at": "2026-10-18T17:44:38.543743",
         "summary": "Overall network health appears stable with consistent connectivity to all monitored destinations. While latency and jitter to"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-10-16T20:25:30.688118",
         "summary": "The network telemetry data indicates a critical issue as zero packets are being received for all monitored destinations, including"
-    },
-    {
-        "generated_at": "2026-10-16T17:12:52.545399",
-        "summary": "The network demonstrates stable connectivity to core internet services like Google, with consistently low latency, no packet loss"
     }
 ]
