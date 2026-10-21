@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-10-21T06:56:15.387506",
+        "summary": "The network is generally stable with no packet loss reported across monitored destinations. However, intermittent periods of"
+    },
+    {
         "generated_at": "2026-10-21T01:12:46.152589",
         "summary": "The network generally demonstrates stable connectivity to external services, with all monitored destinations consistently reporting an \""
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-10-18T17:44:38.543743",
         "summary": "Overall network health appears stable with consistent connectivity to all monitored destinations. While latency and jitter to"
-    },
-    {
-        "generated_at": "2026-10-18T14:14:39.883936",
-        "summary": "The network generally maintains stable connectivity to critical internet services like Google and 8.8"
     }
 ]
