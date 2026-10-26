@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-10-26T08:26:11.080262",
+        "summary": "The network is currently stable with all monitored services consistently reporting an online status and no packet loss observed"
+    },
+    {
         "generated_at": "2026-10-26T02:52:31.223043",
         "summary": "The network is currently stable with all monitored destinations reporting an Online status and no packet loss."
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-10-24T05:18:56.753014",
         "summary": "The network is generally stable with no packet loss observed across all monitored destinations. Initial telemetry"
-    },
-    {
-        "generated_at": "2026-10-24T00:11:37.615421",
-        "summary": "The network generally appears stable with all monitored destinations consistently reporting an \"Online\" status and"
     }
 ]
