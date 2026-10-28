@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-10-28T00:54:56.995180",
+        "summary": "Overall network connectivity to critical services like google.com and 8.8.8.8 remains stable with consistently low latency and no packet loss observed. However, connections to sanook.com exhibit significantly elevated latency, ranging from 245ms to 280ms, and more variable jitter. Despite these performance differences, all monitored destinations are reporting an"
+    },
+    {
         "generated_at": "2026-10-27T21:44:36.506270",
         "summary": "The network demonstrates stable and healthy connectivity to global services like google.com and 8.8"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-10-25T10:34:55.980534",
         "summary": "The network is generally stable with no reported packet loss and all monitored destinations are online. Connectivity to"
-    },
-    {
-        "generated_at": "2026-10-25T05:35:46.383613",
-        "summary": "The network is generally stable, with all monitored destinations consistently online and experiencing no packet loss. Connectivity to"
     }
 ]
