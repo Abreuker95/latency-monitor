@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-10-31T01:22:51.647145",
+        "summary": "Overall network connectivity appears stable and healthy, with all monitored destinations reporting an Online status and no packet loss observed. Performance to common internet services like google.com and 8.8.8.8 is excellent, characterized by consistently low latency and jitter. However, connections to sanook.com exhibit significantly higher latency and jitter, which warrants further investigation into the routing path or the target server's responsiveness, despite maintaining an online status."
+    },
+    {
         "generated_at": "2026-10-30T21:20:09.299227",
         "summary": "The network is currently operating in a healthy state with all monitored destinations showing online status and no packet"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-10-27T21:44:36.506270",
         "summary": "The network demonstrates stable and healthy connectivity to global services like google.com and 8.8"
-    },
-    {
-        "generated_at": "2026-10-27T17:18:58.458789",
-        "summary": "The network is currently stable with all monitored services reporting online status and no packet loss. General internet"
     }
 ]
