@@ -1,5 +1,9 @@
 [
     {
+        "generated_at": "2026-11-27T06:22:52.508837",
+        "summary": "The network generally maintains stable connectivity to critical services like Google and 8.8."
+    },
+    {
         "generated_at": "2026-11-26T23:26:41.249506",
         "summary": "The network generally appears stable with all monitored destinations reporting an Online status and no packet loss observed. Lat"
     },
@@ -54,9 +58,5 @@
     {
         "generated_at": "2026-11-22T07:41:54.909640",
         "summary": "The network is currently stable with all monitored destinations reporting online status and no packet loss observed. However"
-    },
-    {
-        "generated_at": "2026-11-22T00:52:14.462731",
-        "summary": "The network generally appears stable with all monitored destinations reporting online status and no packet loss."
     }
 ]
